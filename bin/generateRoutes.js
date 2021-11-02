@@ -16,7 +16,7 @@ function fileToName(filename) {
     .replace("index", "home");
 }
 
-export const generateRoutes = (
+const generateRoutes = (
   pagesFolder = "./pages",
   generatedFileName = "./routes.js"
 ) => {
@@ -99,3 +99,5 @@ export const generateRoutes = (
     }
   });
 };
+
+generateRoutes("./pages", "./routes.js");

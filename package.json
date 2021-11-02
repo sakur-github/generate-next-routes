@@ -1,0 +1,22 @@
+{
+  "name": "generate-next-routes",
+  "version": "1.0.0",
+  "description": "Generates a routes.js file from the /pages folder in your Next.js project",
+  "main": "bin/generateRoutes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakur-github/generate-next-routes.git"
+  },
+  "author": "Oliver Levay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sakur-github/generate-next-routes/issues"
+  },
+  "homepage": "https://github.com/sakur-github/generate-next-routes#readme",
+  "bin": {
+    "generate-next-routes": "./bin/generateRoutes.js"
+  }
+}
