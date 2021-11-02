@@ -1,18 +1,51 @@
 # generate-next-routes
 
-Creates a file called `routes.js` containing the available routes in your `/pages` folder in your [Next.js](https://github.com/vercel/next.js/) project.
+Generates a `routes.js` file containing the available routes in `/pages` folder in [Next.js](https://github.com/vercel/next.js/) project.
 
 ## Install
 ```bash
-npm i -D generate-next-routes
+npm install --save-dev generate-next-routes
+```
+or
+```bash
+yarn add -D generate-next-routes
+```
+
+## Generation
+Add `generate-next-routes` as a script to `package.json` (not necessary when using yarn)
+``` jsonc
+"scripts": {
+  /* existing scripts */
+  "generate-next-routes": "generate-next-routes"
+}
+```
+Run command
+``` bash
+npm run generate-next-routes
+```
+or
+```bash
+yarn generate-next-routes
 ```
 
 ## Usage
-```
-TODO
-```
 
-## Stucture of routes.js structure
+### Old way
+``` javascript
+<Link href="/about-us">
+  About us
+</Link>
+```
+### New way
+``` javascript
+import { routes } from '../routes'; // path can be aliased in your jsconfig for easier imports
+
+<Link href={routes.aboutUs}>
+  About us
+</Link>
+```
+[How to implement path alias](https://code.visualstudio.com/docs/languages/jsconfig#_using-webpack-aliases)
+## Stucture of routes.js file
 Given a directory structured like this:
 
 ```
