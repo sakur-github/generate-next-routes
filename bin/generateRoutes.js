@@ -74,7 +74,7 @@ const generateRoutes = (
       const key = Object.keys(page)[0];
       const value = Object.values(page)[0];
       if (typeof value === "string" || !value.length) {
-        pagesObject[key] = value;
+        pagesObject[key] = value || "/";
       } else {
         pagesObject[key] = walkPages(value);
       }
