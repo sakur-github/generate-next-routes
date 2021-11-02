@@ -1,6 +1,6 @@
 {
   "name": "generate-next-routes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generates a routes.js file from the /pages folder in your Next.js project",
   "main": "bin/generateRoutes.js",
   "scripts": {
